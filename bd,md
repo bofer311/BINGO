@@ -1,0 +1,34 @@
+# Diseño de BD
+
+## parametros
+
+    * id: str(50)
+    * valor: str(50)
+
+#### Registros:
+
+    Estos registros los genera el servidor al inicializar la BD:
+
+    {
+        id: "servidor_version"
+        valor: "0.0.1"
+    }
+
+## partida
+
+    * id: int (inutil en la primera versión)
+    * num_sacados: json (lista) de números ya sacados (no está normalizado)
+
+## jugador
+
+    * id: int (autonumérico)
+    * nombre: str(20)
+    * contrasenna_hash: str(64)
+    * [v2] estado: nunca_ingreso | jugando | salio
+    * [v2] permtir_conexion: 0 | 1
+
+## carton
+
+    * id: int (autonumérico)
+    * nums: json (lista de 3 listas (una por línea de cartón, así en una versión posterior se puede detectar línea completa))
+    * jugador_id: int (fk -> jugador.id)
