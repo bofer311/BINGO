@@ -2,7 +2,7 @@
 
 ## Servidor v0.0.1
 
-### Inicialización
+### Servidor - Inicialización
 
     * IP, puerto y contraseña de anfitrón, se definen en archivo de configuración: "servidor.cfg".
     (ver sección "servidor.cfg")
@@ -44,11 +44,18 @@ bd = "bingo.sqllite"
 
 ###### Controles:
 
-    * ???
+    * Conectado o Online
 
 #### Acciones de Anfitrón
 
 - Ver el interacmbio de mensajes en anfitrión.md
+
+<!-- ### (Conectar a servidor) -->
+
+    * Se conecta al servidor
+    * Recibe mensaje "servidor_presentacion"
+    * Si el anfitrión soporta la versión del servidor, hace "Ingresar anfitrión"; si no, simplemente se desconecta.
+
 - Aqui sólo se hacen algunas observaciones para tener en cuenta desde el punto de vista del servidor.
 
 ##### Ingresar anfitrión
@@ -58,8 +65,7 @@ bd = "bingo.sqllite"
 
 ###### Controles:
 
-    * Controlar contraseña
-    *Que no haya otro
+    * ???
 
 ### Cancelar partida
 
